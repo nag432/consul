@@ -1,0 +1,16 @@
+sudo git2consul --config-file /tmp/git2consul.json -n
+{
+  "version": "1.0",
+  "repos" : [{
+    "name" : "sample_configuration_dev",
+    "url" : "https://github.com/nag432/consul.git",
+    "source_root": "Production/TMS",
+    "ignore_file_extension" : true,
+    "expand_keys": true,
+    "branches" : ["master"],
+    "hooks": [{
+      "type" : "polling",
+      "interval" : "1"
+    }]
+  }]
+}
