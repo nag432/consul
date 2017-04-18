@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "repos" : [{
+    "name" : "EnvName/PrjName",
+    "url" : "https://github.com/nag432/consul.git",
+    "source_root": "EnvName/PrjName/",
+    "ignore_file_extension" : true,
+    "include_branch_name" : false,
+    "expand_keys": true,
+    "branches" : ["master"],
+    "hooks": [{
+      "type" : "polling",
+      "interval" : "1"
+    }]
+  }]
+}
